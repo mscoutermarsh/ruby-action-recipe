@@ -40,11 +40,15 @@ Setup your workflow to trigger whenever an Issue receives a comment.
 *Note:* The `issue_comment` event is currently only available in private repos. If you're doing this in a public repo, use `push` for now.
 
 Then, drag a line to your new Action.
-![](http://cloud.mikeasaur.us/febb1899232b/Screen%252520Recording%2525202019-01-14%252520at%25252004.33%252520PM.gif)
+![](http://cloud.mikeasaur.us/fd228f66cf8d/Screen%252520Recording%2525202019-01-14%252520at%25252005.02%252520PM.gif)
 
-This tells GitHub to run your Action whenever an Issue receives a new comment.
+Be sure to click `GITHUB_TOKEN` so that your Action can use the GitHub API.
 
 Commit your change.
 
 ### Trigger the event
 Now the fun part. Trigger your event by commenting on an issue in your repo. Then check the Actions tab to see your Action run.
+
+![](http://cloud.mikeasaur.us/134492c4e33a/Image%2525202019-01-14%252520at%2525205.05.11%252520PM.png)
+
+Take a look at the logs and you'll see the output from the `puts` calls in your Ruby script. ✨
