@@ -4,14 +4,14 @@ Use this to kickstart building an Action with Ruby.
 
 ## Usage
 
-In your Repository, create a new folder for your Action under `.github/`.
+1. **In your Repository, create a new folder for your Action under `.github/`.**
 
 ```
 mkdir .github/my_ruby_action
 cd .github/my_ruby_action
 ```
 
-Next, copy `Dockerfile`, `entrypoint.sh` and `action.rb` from this repository into your new folder.
+2. **Next, copy `Dockerfile`, `entrypoint.sh` and `action.rb` from this repository into your new folder.**
 
 Here are some easy commands to download them.
 
@@ -21,17 +21,17 @@ curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/D
 curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/entrypoint.sh > entrypoint.sh
 ```
 
-Next, make your `entrypoint.sh` file executable.
+3. **Make your `entrypoint.sh` file executable.**
 
 ```
 chmod u+x entrypoint.sh
 ```
 
-Then, commit and push up your changes.
+4. **Commit and push up your changes.**
 
-### Running your new Action
+## Running your new Action
 
-Visit the Actions tab for your repository.
+1. **Visit the Actions tab for your repository.**
 
 Setup your workflow to trigger whenever an Issue receives a comment.
 
@@ -39,14 +39,14 @@ Setup your workflow to trigger whenever an Issue receives a comment.
 
 *Note:* The `issue_comment` event is currently only available in private repos. If you're doing this in a public repo, use `push` for now.
 
-Then, drag a line to your new Action.
+2. **Then, drag a line to your new Action.**
 ![](http://cloud.mikeasaur.us/fd228f66cf8d/Screen%252520Recording%2525202019-01-14%252520at%25252005.02%252520PM.gif)
 
 Be sure to click `GITHUB_TOKEN` so that your Action can use the GitHub API.
 
-Commit your change.
+3. **Commit your change.**
 
-### Trigger the event
+## Trigger the event
 Now the fun part. Trigger your event by commenting on an issue in your repo. Then check the Actions tab to see your Action run.
 
 ![](http://cloud.mikeasaur.us/134492c4e33a/Image%2525202019-01-14%252520at%2525205.05.11%252520PM.png)
