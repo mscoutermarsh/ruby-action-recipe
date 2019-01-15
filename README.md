@@ -21,6 +21,12 @@ curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/D
 curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/entrypoint.sh > entrypoint.sh
 ```
 
+Next, make your `entrypoint.sh` file executable.
+
+```
+chmod u+x entrypoint.sh
+```
+
 Then, commit and push up your changes.
 
 ### Running your new Action
