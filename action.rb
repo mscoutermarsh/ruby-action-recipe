@@ -2,7 +2,7 @@ require "octokit"
 require "json"
 
 # Each Action has an event passed to it.
-event = JSON.parse(File.read(ENV['GITHUB_EVENT_PATH'])
+event = JSON.parse(File.read(ENV['GITHUB_EVENT_PATH']))
 puts event.inspect
 
 # Use GITHUB_TOKEN to interact with the GitHub API
