@@ -21,9 +21,11 @@ curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/D
 curl https://raw.githubusercontent.com/mscoutermarsh/ruby-action-recipe/master/entrypoint.sh > entrypoint.sh
 ```
 
-Then, push up your changes and visit the Actions tab to setup the first run of your new Ruby Action.
+Then, commit and push up your changes.
 
 ### Running your new Action
+
+Visit the Actions tab for your repository.
 
 Setup your workflow to trigger whenever an Issue receives a comment.
 
