@@ -17,4 +17,6 @@ RUN apk update && \
 COPY entrypoint.sh /entrypoint.sh
 COPY action.rb /action.rb
 
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
