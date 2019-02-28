@@ -1,7 +1,7 @@
 FROM andrius/alpine-ruby
 
-LABEL "com.github.actions.name"="Ruby Action"
-LABEL "com.github.actions.description"="Build a GitHub Action with the language you love, Ruby."
+LABEL "com.github.actions.name"="Example Ruby Action"
+LABEL "com.github.actions.description"="Example code for building a GitHub Action with the language you love, Ruby."
 LABEL "com.github.actions.icon"="filter"
 LABEL "com.github.actions.color"="red"
 
